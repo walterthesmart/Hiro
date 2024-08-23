@@ -1,0 +1,49 @@
+[project]
+name = 'Hiro'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.challenge]
+path = 'contracts/challenge.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.error]
+path = 'contracts/error.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.lsits]
+path = 'contracts/lsits.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.mapping]
+path = 'contracts/mapping.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.todos]
+path = 'contracts/todos.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.transaction]
+path = 'contracts/transaction.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.votes]
+path = 'contracts/votes.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
